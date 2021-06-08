@@ -1,0 +1,1 @@
+This is a simple project demonstrating react, JSX, forms, state, class-based components, functional components, and more.

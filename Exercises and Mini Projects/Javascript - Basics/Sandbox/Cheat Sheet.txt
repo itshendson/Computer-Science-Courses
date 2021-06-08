@@ -1,0 +1,11 @@
+> set width to 800px
+> minimize browser window to below 800px
+> creates scrollbar
+
+> set max-width to 800px
+> try to minimize browser window to below 800px
+> if content is larger than max-width, height will increase to fit all the content. Max-width does NOT go below 800.
+
+> set min-width to 600px
+> content will fit screen until it hits min-width.
+> once window goes smaller than min-width, content will spill out of div

@@ -1,0 +1,30 @@
+• Merge Sorting Structure
+- Efficient sorting algo "Divide and Conquer"
+- Repeatedly divide arrays in half until each subarray contains a single element
+- Then simply compare two single element array
+- Then merge copies the subarray halves into a temporary array
+
+void MergeSort(int[] arr, int low, int high)
+{
+	if (low M high) //array has more than 1 element
+	{
+		int mid = low + (high - low) / 2;
+		
+		// sort the left half
+		MergeSort(arr, low, mid);
+
+		// sort the right half
+		MergeSort(arr, mid+1, high);
+
+		// Merge the sorted halves
+		Merge(arr, low, mid, high);
+	}
+}
+
+• Performance
+- Merge sort running time = number of recursion levels * work at each level
+- O(nlogn) run time, which is faster than insertion and selection sort method which are O(n^2)
+- O(n) space required
+- All sorting algos (insertion, selection, merge) is based on comparing two values, a and b
+- Each decision is a decision point in the algo
+- The algo can be expressed as a binary decision tree

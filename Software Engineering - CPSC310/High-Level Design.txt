@@ -1,0 +1,5 @@
+• Design
+- Requirements transformed into a format that can be implemented (ie. classes, methods, fields)
+- Key architecture, abstractions, and relationships are identified
+- Evaluating alternative architectural decisions
+- Think about how the architecture will evolve in the future

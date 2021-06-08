@@ -1,0 +1,53 @@
+---Thread
+
+• Threads are sequential flows of execution processed by CPU. Threads imply concurrency. 
+• Threads are just a series of fetch-executes by the CPU and main memory???
+• Threads can be stopped (blocked) and restarted (unblocked)
+• Joining a thread means blocking the called thread until a target thread completes
+
+
+---Executor Service in Java
+• Instead of creating multiple threads which are resource intensive, we create a pool of thread then assign those threads to a task. The threads fetch a new task from the blocking queue then executes it.
+
+
+
+---Process Control Block
+Also called task control block
+• Process ID: Every process has a unique process ID
+• Process State: Is the process state new, running, waiting, etc.
+• Program Counter: Indicates the address of the next instruction to be executed for a particular process
+• CPU Registers: The registers being used by the process
+• CPU Scheduling Information: Has the priority and pointer of the scheduling queue. Determines the order that the processes has to be executed.
+• Memory Management Information: Represents the memory being used by the process. 
+
+• Every thread have its own stack.
+• Ready queue of tasks assigned to runnable Thread Control Blocks which are assigned a stack
+
+
+---Thread Yielding / Preemption
+• Thread.yield() causes the currently executing thread object to temporarily pause and allow other threads to execute.
+• Thread yielding only works for platform that supports preemptive scheduling
+• When thread.yield() is called, only threads with higher priority than the current-running thread is ran
+
+
+---Thread Lifecycle
+1. New Thread T is created (New)
+2. Thread T is put into Runnable state (Runnable)
+3. Thread Scheduler allocates processor to Thread T (Running)
+4. IF Thread.yield is called, then Thread T is put back in Runnable state (Runnable)
+5. Thread Scheduler allocates processor to Thread T (Running)
+6. Thread T completes its run (Dead)
+
+
+
+
+---Thread Switch (Aka. context switch)
+• To switch from Thread 1 to Thread 2, the system must save the state of Thread 1 in register so that it can be restored when Thread 2 completes. 
+• Analogy: It's like reading a book, realizing you need to take a call so you put a bookmark in the book (saving the state of the first process) so that you can come back to it later.
+
+
+
+---Thread Scheduling
+• Process of deciding what threads should run
+• Need Thread Scheduling when there are more runnable threads than processors
+• Threads have priority assigned to it. The highest priority goes first. 

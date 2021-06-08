@@ -1,0 +1,55 @@
+• Great cheat sheet on different data structures and its Big-O:
+https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/20-hash1-203-1201.pdf
+
+• Why Hash Tables are Awesome
+- Great for interviews!
+- Great for key-value pair lookup
+- Very fast for data retrieval no matter how much data there is
+- Mainly used to index large amounts of data like in database indexing, compilers, caching, password authentication, and more
+
+
+- If you want to look for an element in an array, there are two methods:
+1. Brute force: Compare each element of the array to see if it is what you're looking for
+2. You already know the index: If you already know the index of the element, finding the element you want is O(1) aka very fast 
+...but how can you guarantee you'll know what the index is for what you're looking for? By using hashing...
+
+• How Hash Tables Work (https://www.youtube.com/watch?v=KyUTuwz_b7Q&ab_channel=ComputerScience)
+- Takes an element of an array and converts it to some integer (eg. convert each letter of a String to ascii)
+- Index Number = sum of ASCII codes Mod size of array
+- Now, if you want to find an element, you just take that element, do the same procedure to find the index!
+
+
+• Hashing Algorithm (Also called hash functions)
+- The calculation used to convert a key to an integer which can be used to find an index in a map
+
+• Collision
+- When the hashing algo maps two different keys to the same index
+- Open Addressing/Linear Probing: When this happens, you go to the next memory address until it is empty.
+
+• Load Factor
+- Since the more data you have, the more collision you have
+- Load Factor = Total number of items stored / Size of the array
+- As the table fills, load factor increases (performance decreases as load factor increases)
+
+• Separate Chaining/Close Addressing
+- Yet another method for dealing with Collisions
+- The index of an array actually points to a LinkedList
+- If another key has the same index of something that is already in the array, just add it to the next linkedlist
+- There are many more methods to deal with collisions
+- Primary clustering happens when there are too many gaps in between indexes that have values
+
+• Hash Table Properties
+- Fast: Access to tash tables and converting the key to a number should also be in constant time
+- Deterministic: For given input, it must always return the same value. Therefore, the hash algo should not rely
+		 System time, memory location, pseudo-random numbers
+- Uniformity: The hash algo/hash function generates each value in the output range with the same probability
+	      That is, each legal hash table index has the same chance of being generated
+
+• General Principles of a Good Hash Algo/Hash Function
+- Use the entire search key in the hash function (not just, say, the first two letters of a string)
+- If the hash function uses mod make the table size a prime number
+- A simple and effective hash function is:
+	- Convert the key value to an integer, x
+	- h(x) = x mod tablesize    where tablesize is the first prime number larger than twice the size of the number of expected values
+
+

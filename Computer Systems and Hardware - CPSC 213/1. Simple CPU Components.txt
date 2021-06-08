@@ -1,0 +1,26 @@
+https://www.youtube.com/watch?v=SzV4l0_1MCQ
+https://www.cs.ubc.ca/~feeley/cs213/2011w1/resources/companion.pdf (Ch 1, 2.1)
+
+Combination Circuits - Where an output is based ONLY on a present input. Combination circuit uses static information.
+
+Sequential Circuits - Where an output is based on both an present input AND a previous output. Because there is a previous output, memory is needed to store that previous output. Sequential Circuits uses dynamic information. The input comes from a register. The output comes out to the same register. 
+
+There is also a third input, called F. F is a number that selects one of several functions. For example F= 4 could mean A + B. F = 3 could mean A * B.
+
+Clock - Determines when a circuit executes. Clocks have ticks (usually the rising edge) that goes from low to high repeatedly at a frequency. There are many signals/inputs that goes to the circuit. We don't want these signals/inputs to be executed randomly. The clock regulates that to ensure there is order and sequence to these signals/inputs.  
+
+Memory - Short term storage. Data is wiped when computer shuts off (eg. RAM). Memory can be thought of as a long tape of bytes. Each byte has an address. The address is just an integer (eg. 132)
+
+Storage - Persistent storage of data that exists even after computer is turned off (eg. writing on discs, hard drive, SSDs)
+
+
+
+
+
+
+
+
+
+
+
+

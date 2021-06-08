@@ -1,0 +1,46 @@
+Variables are either static or dynamic. The compiler is aware of a static variables' address. Scalars (primities) and arrays also have a fixed address. The compiler does not know the address of a dynamic array. For static variable, once it is allocated, it cannot be changed. Dynamic variables have an initial amount of memory allocated that may grow or shrink. Dynamic allocation of memory is when the memory requirement is known only at run time. 
+
+The programmer is the one who decides whether best to use static or dynamic variables. 
+
+Example of static variable: int b = 5
+Example of static array: int arr[] = new int[5] 
+(array is always length 5 and will always occupy the same amount of memory blocks.
+Example of dynamic variable: anything that uses malloc()
+
+A static variable in Java belongs to a class, not to an object. All objects however "share" the static variable. In C it is called a "global scope". A static variable is written to an address that does not change, making it easy to retrieve as the compiler knows the location. If a variable is a reference, it complicates things as multiple steps are needed to retrieve the value of a variable that uses a reference. 
+
+The compiler basically converts high level language to machine code. 
+
+In C, malloc() is used to allocate memory from heap to your array of memory. 
+
+
+---
+
+In Java, all arrays are allocated dynamically.
+
+public class Foo {
+	static int a;
+	static int b[] = new int[10];
+
+The compiler allocates memory as soon as this line executes: int b[] = new int[10];
+
+The compiler does not know the address of a dynamic array. BUT it does know the address of b and b contains the address/reference of the aray. b stores a reference to the array. 
+
+---
+
+Instance variable are also called non-static variable. Static variables do not change with the object. Non-static (Instance) variable can change with the instance of an object. An example could be that you have class Dog and an instance variable could be age because age differs with the instance of dog. You do not need to declare "static" when declaring an instance variable.
+
+int a <-- because the word "static" isn't declared, this is an instance variable
+static int b <-- because the word "static" is here, this is a static variable
+
+A static variable example could be numberOfLegs because all instance of dogs will have 4 legs no matter the instance. 
+
+Local variable are variables declared inside a method. As long as the method is running, the local variable exists, as soon as the method is done, the local variable will have been deallocated.
+
+---
+
+Memory and types of variables:
+
+Static Variables: The compiler knows exactly where in memory a static variable is located.
+
+Instance Variables: Instance variables are dynamic variables (to be dynamic means that its address and values is only known during runtime). Although the compiler may not know the address of an instance variable, it does know the object that contains it. And if the compiler knows the address of the object, it can perform an offset to find the instance variable. 

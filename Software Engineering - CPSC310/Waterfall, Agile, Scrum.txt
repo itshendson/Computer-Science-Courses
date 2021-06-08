@@ -1,0 +1,30 @@
+• Waterfall
+1. Requirements
+2. Design
+3. Implementation
+4. Verification
+5. Maintenance
+
+- Each step has extremely clear hand-offs between stakeholders (PM -> DEVs -> Implementation)
+- Weakness: Extreme pushback against revisting a prior phase/inflexible
+
+
+• Agile
+- The idea is to let development teams rapidly and flexibly produce software systems.
+- Agile is designed to foster increased customer interaction within a software system
+- Idea is to spend less time building the wrong thing and let engineers try different design alternatives
+- Agile approaches used by teams who need to frequently deploy their systems (eg. continuous deployment techniques)
+
+- Individuals and interactiosn over processess and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to changes over following a plan
+
+
+• Scrum
+1. Product Backlog
+2. Planning
+3. Spring Backlog
+4. Sprint
+
+- An incremental iteration-based methodology that breaks work into fixed-length sprints (1 - 3 weeks). Code is shippable after each sprint

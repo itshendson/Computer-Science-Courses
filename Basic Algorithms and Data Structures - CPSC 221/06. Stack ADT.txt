@@ -1,0 +1,29 @@
+• Stack Data Structure
+- Only allows items to be inserted/removed at one end (the top)
+- The other end is called the bottom
+- Order of stack based on order in which they arrive
+- LIFO
+
+• Stack Behaviour
+- Push: insert item to top of stack
+- Pop: remove and return the top item
+- Peek: return the top item
+- Is_empty: does stack contain items
+
+• Implementation
+- Can be implemented by Linked lists, Arrays, and others
+
+- Arrays: When implementing by arrays, need to keep track of the index that represents the top
+- When we insert an item, increment this index
+- When we remove an item, decrement this index
+- Insertion or deletion time is independent of the number of items in the stack
+
+- Dynamic Arrays:
+- Push and pop performed in constant time
+- Can design a dynamic array stack such that when it is full either:
+	- No new values can be inserted, or
+	- a new, larger array can be created (linear time)
+
+- Linked List:
+- Push and pop simplyu call insert or remove from front of list
+- All operations O(1)

@@ -1,0 +1,48 @@
+Animal aAnimal = new Mammal();
+• Apparent Types: the declared type (above example is Animal)
+• Actual Types: refers to the type of the object assigned to a variable (above example would be Mammal) 
+- The compiler first checks the subclass for a method. If none are found, it goes to the superclass
+- A Java Class can only have one superclass but multiple implementations:
+	class MP3Track implements Serializable, MusicTrack ...
+
+
+• Polymorphism, Interface, Implementations
+- The List interface has multiple implementations (ArrayList and LinkedList)
+- Dispatching: the mechanism that ensures the desired implementation. The mechanism basically chooses the actual type.
+- Superclass are great because if there is an error in a subclass, you just fix it in the superclass and it is fixed everywhere
+- But we can still override the superclass if needed by redeclaring the method in the subclass
+- Use @Override to let compiler know
+
+
+
+
+• Type Substitution
+- A superclass (eg. Animal) can be substituted by a subtype (eg. Dolphins, Zebra, etc) if the subtype supports the same operations as the supertype. The Java compiler checks for this by looking at the method signatures, that is, the subtype has a definition for each operation that matches the definition of the operation in the supertyle.
+- Unfortunately, the compiler cannot ensure that the behaviour of a subtype operation respects of the constraints specified by the behaviour of the supertype operation.
+- The subtype method should have a weaker pre-condition (REQUIRES) clause than the supertype. In other words, the subtype pre-condition methods requires less from its caller than the supertype.
+
+
+
+
+• Pre-Conditions
+- The conditions that have to be true before a method runs
+1. What has to be true about the state of the program (class variables, objects)?
+2. Specify the required variables
+- Try to avoid preconditions, they are actually undesirable
+
+• Post-Conditions
+- The conditions that can be guaranteed after method is finished
+1. How is the state of the program changed (what objects and class variable changed)? (Don't worry about local variables and parameters because they disappear after the method is done)
+2. Specify return values (It's usually in Effect so don't need to repeat)
+
+• Assert Command
+- If Pre-Conditions not met, throw an AssertException
+- assert BooleanCondition;
+
+
+
+• Weakening the Precondition, Strengthening the Postcondition
+- You want the subclass to have a weaker precondition than the superclass.
+- Weaker means to have less requirements
+
+- You want the subclass to have a stronger postcondition than the superclass.

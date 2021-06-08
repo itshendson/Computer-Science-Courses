@@ -1,0 +1,21 @@
+package learningJava;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Scanner is the class, sc is the reference name (stored in stack), new (creates an object in heap), Scanner() is the newly created object
+        Scanner sc = new Scanner(System.in);
+        String scanned = sc.next();
+        int scannedNum = sc.nextInt();
+
+        System.out.println(scanned);
+
+    }
+}
+
+• Scanners are just an easy way to read primitive types like int, double, etc.
+• .next() gives string
+• .nextInt() gives int
+• .nextBoolean() gives boolean
+• .nextDouble() gives double

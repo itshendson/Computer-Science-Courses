@@ -1,0 +1,13 @@
+• APIs
+- APIs are how application components interface with each other
+- Allows for easy way to interact with other programs without worrying about implementations
+- Example: Weather app using API to communicate with weather company, Amazon uses API to communicate with your bank, etc
+
+
+REST API
+- Request/Response
+- Example Browser URL request to server. Server responds with the HTML
+- Most common requests: GET, PUT/UPDATE, POST, DELETE
+- REST Service responds with JSON, html, or XML
+- Request headers contains extra specificiation like what response format you want back
+- Authentication: lets user access or limit how many/often they can access

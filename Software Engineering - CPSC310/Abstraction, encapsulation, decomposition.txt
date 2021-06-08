@@ -1,0 +1,16 @@
+• Purpose of Abstraction
+- Allow Software Engineers to focus on just the key information
+- If talking with UX Designer, viewpoint shifts
+- If talking with QA, talking in more details
+- Level of abstraction changes depending on who you're talking to/which stakeholder you're talking to
+
+• Decomposition
+- Break down high-level complex description into smaller manageable pieces
+
+• Encapsulation
+- Enables abstraction through the use of interface
+- Encapsulate data and behaviour of a class and separate it from its implementation
+
+• Information Hiding
+- Hide specific details about implementation from the high-level interface
+- Separates that which varies (the implementation) from what stays the same (method names)

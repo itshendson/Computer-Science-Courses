@@ -1,0 +1,16 @@
+package learningJava;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int tries = 3;
+
+        do {
+            System.out.println("Who's that Pokemon?");
+            String guess = sc.next();
+        } while (tries <= 3 && !(sc.equals("Pikachu")));
+    }
+}

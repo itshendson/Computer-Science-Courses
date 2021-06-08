@@ -1,0 +1,32 @@
+The BUS connects the CPU, Memory and I/O Devices.
+
+---I/O Devices
+The I/O controller translates/interprets the language between the CPU and the peripherals. 
+The data transfer rate of the I/O is much slower than the CPU. Don't want the CPU to be idle or we're wasting its time. 
+
+
+
+• PIO: CPU initiates data transfer between CPU and controller
+• Interrupt: I/O controller initiates data transfer from controller to CPU
+• DMA: I/O controller initiates data transfer between controller and memory
+
+
+--- Direct Memory Access (DMA)
+• Controller can send/read data from/to any main memory address
+• The CPU is not aware of these data transfer
+
+--- CPU Interrupts
+• Controller can initiate and signal the CPU of an input event
+• The CPU preempts any running processes to handle the event
+• Interrupts are more responsive than the polling method 
+• The interrupt process is embeded in every fetch-execute cycle to ensure responsiveness to inputs
+
+
+
+---Asynchronous I/O 
+
+Synchronous I/O: The reading function returns only when I/O operation is completed.
+Example: Client makes a call to server. Client WAITS until message is received before doing anything else. The client cannot do anything else while waiting.
+
+Asynchronous I/O: The reading function returns immediately but an I/O operation is pending.'
+Example: Client makes a call to server. Client performs other processes, even though message has not yet been received. This prevents idle time. When the server is ready it callsback to the client. 

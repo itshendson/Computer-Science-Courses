@@ -1,0 +1,17 @@
+.todo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    margin-right: 2.5%;
+    border-bottom: 1px solid black;
+}
+
+.todo-item {
+    display: flex;
+}
+
+p {
+    margin-left: 2.5%;
+    margin-right: 3%;
+}

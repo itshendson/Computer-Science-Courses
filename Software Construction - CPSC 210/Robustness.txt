@@ -1,0 +1,35 @@
+• Robustness - Best practice in which software that performs properly under a variety of situations. 
+
+• Scenario
+- Imagine we want a method that takes in the parameters years, months, and day and returns how many days we are into the year
+- You can account for this in the REQUIRED clause or...
+- You can account for this in the EFFECT clause by writing the code in a way that can accept all inputs such as 0, -1, or -2
+- If we wanted to make this method robust, we may have to consider what happens if the parameter is 0, or -1, or -2, etc. etc. but there would be too many possibilities to have to account/code for
+
+- A better approach is to separate normal and exceptional conditions. Whenever an operation terminates abnormally, get the compiler to throw an exception.
+- Exception handling is included in Effects
+
+
+• Exceptions
+- In Java, Exceptions are objects of the Exception Type.
+
+public int nthDayInYear(int year, int month, int day)
+	throws IllegalValueException {
+		if (year <= 0) {
+			throw new IllegalValueException("Year is <=0");
+		...
+
+- Notice that we had to use "new" as Exceptions are objects
+
+public void someMethod() {
+	try {
+		...
+		int n = nthDayInYear(-1, -1, -1);
+		...
+	} catch(IllegalValueException e) {
+		// Do something smart about the exceptional condition
+		// ie, handle the exceptional condition
+	}
+	*...
+}
+

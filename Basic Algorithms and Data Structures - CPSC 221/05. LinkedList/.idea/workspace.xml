@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3c590d3-26c5-4d78-a3cf-7dae98449232" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h1AwqY5vHn1Q5KishkQXUQRZaW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../4. Insertion Sort" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Run" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method />
+    </configuration>
+    <configuration name="LinkedListLecture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedListLecture" />
+      <module name="5. LinkedList" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LinkedListLecture" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration>C:\Users\suspended.mirror\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3c590d3-26c5-4d78-a3cf-7dae98449232" name="Default Changelist" comment="" />
+      <created>1599168474229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599168474229</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="211" width="1089" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599169926467">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="211" width="1089" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599169926467" />
+    <state x="754" y="358" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599169665974">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="754" y="358" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599169665974" />
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599170117755">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170117755" />
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1599169832751">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599169832751" />
+    <state width="2027" height="367" key="GridCell.Tab.0.bottom" timestamp="1599170558381">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558381" />
+    <state width="2027" height="367" key="GridCell.Tab.0.center" timestamp="1599170558380">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558380" />
+    <state width="2027" height="367" key="GridCell.Tab.0.left" timestamp="1599170558380">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558380" />
+    <state width="2027" height="367" key="GridCell.Tab.0.right" timestamp="1599170558380">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558380" />
+    <state width="2027" height="367" key="GridCell.Tab.1.bottom" timestamp="1599170558381">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558381" />
+    <state width="2027" height="367" key="GridCell.Tab.1.center" timestamp="1599170558381">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558381" />
+    <state width="2027" height="367" key="GridCell.Tab.1.left" timestamp="1599170558381">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558381" />
+    <state width="2027" height="367" key="GridCell.Tab.1.right" timestamp="1599170558381">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170558381" />
+    <state x="681" y="259" width="672" height="677" key="run.anything.popup" timestamp="1599170079451">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" width="672" height="677" key="run.anything.popup/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599170079451" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedListLecture.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.LinkedList$ListItr" memberName="next" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Simple Calculator</string>
+
+    <string-array name="items">
+        <item>Fish and Chips</item>
+        <item>Red Leave Herbs</item>
+        <item>Green Gem</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$7.99</item>
+        <item>$12.99</item>
+        <item>$15.00</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Yummy</item>
+        <item>For mixing</item>
+        <item>For relaxation</item>
+    </string-array>
+
+</resources>

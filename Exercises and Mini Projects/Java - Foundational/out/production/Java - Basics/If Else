@@ -1,0 +1,29 @@
+package learningJava;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String scanned = sc.nextLine();
+
+        if (scanned.equals("test")) {
+            System.out.println("Test has passed");
+        }
+        else if (scanned.equals("hi")) {
+            System.out.println("hi has passed");
+        }
+        else {
+            System.out.println("FAIL");
+        }
+
+        sayPika();
+
+    }
+
+    //Static lets you use a static method or static variable without creating an object. Static can be referenced anytime.
+    static void sayPika() {
+        System.out.println("pika");
+    }
+
+}

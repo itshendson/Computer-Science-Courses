@@ -1,0 +1,63 @@
+---Benefits of Threads
+• Threads allow for parallelism (multiple processors) and manage asynchrony (do other things while waiting for I/O Controller
+
+---Problems with Threads
+• Two threads using the same critical section is a bug
+• Coordinating access to critical sections shared by multiple threads
+• Synchronization ensures mutual exclusions of critical sections
+
+• Critical Sections: Sections of code that access shared data
+
+
+---Race Condition
+• When multiple threads are using the same shared data and threads are running in a sequence the developer did not intend on, it causes a bug or outputs the wrong value
+• Race Condition can happen whenever concurrency happens on a shared data.
+For example an auction website where multiple people are bidding on the item at the same time.
+
+
+
+---Mutual Exclusion + Locks + Bugs
+• A lock is either held by a thread of available
+• Only one thread can lock at a time, other threads must wait for lock to be released
+• Thread 1 locks, thread 2 is made to wait while thread 3 (not using shared data) gets processed
+• In theory, solves the problem of race condition using lock
+• However, it is still possible that multiple threads think they have a lock which is also a bug. The solution is atomic access.
+
+
+
+---Atomic Memory Exchange Instruction
+• Where a group of operations are performed as a single, indivisible unit. It either happens completely, ot it doesn't happen at all. 
+• Implemented by the Memory Bus. It synchronizes every CPUs access to memory. The Bus ensures that no other memory transaction can intervene. 
+
+
+---Spinlock
+• While Thread 1 is locked, Thread 2 keeps trying to acquire lock repeatedly until Thread 1 unlocks
+• This method does not allow for Thread 3 to enter, but it is faster to keep trying than letting Thread 3 get procssed while Thread 2 waits
+• Spinlock is only effective if Thread 1 will only be locked for a very short time. If thread 1 will take a long time, it is better not to use spinlock so that we don't hold back thread 3 from being processed. 
+• Spinlock is an expensive instruction
+
+
+---Adaptive Spinning
+• Another lock is Adaptive Spinning meaning if Thread 1 is locked, Thread 2 will repeatedly see if it can acquire lock for x amount of tries.
+• If Thread 2 still cannot acquire, then Thread 2 blocks itself and let Thread 3 be processed by the CPU
+
+
+
+---Monitors and Condition Variables
+• Monitors provide mutual exclusion
+• Condition Variables provide synchronization
+	• cwait - if you tell thread to wait, it puts the thread in a queue
+		- in other words, the thread gives up monitor lock and blocks itself
+	• cnotify - releases the next thread in the queue
+• Example psuedo code code
+public synchronized void method() {
+	while (process is not ready) cwait(this thread);
+	//if ready, execute critical section
+	cnotify(other thread)
+}
+
+
+
+---Deadlock
+• A condition where two or more threads are forever blocked waiting for each other.
+• Caused by the synchronized keyword when multiple threads need the same lock but obtain them in different orders. 

@@ -1,0 +1,29 @@
+https://www.youtube.com/watch?v=bum_19loj9A
+
+Data Structure = different ways of storing data on your computer
+
+Lists can be used to store information about how to get from point A to B. There are different lists too for this task like using Arrays or HashMap or linked list or sortedlist or whatever.
+
+Algorithims: the set of instructions to execute the data structure. The set of instructions that will take you to the right address. Using HashMap or Arrays or something else may make an algo more efficient or faster.
+
+Every type of lists have advantages and disadvantages.So depending on what you do, you should use different lists.
+
+---
+
+Big O Notation - Measurement of how well a data structure is for add(), get(), sort(), and search() at scale.
+
+Linked-List - A node has a value (eg. 12) and a pointer. The pointer connects to the next node. The head is the first node. The tail is the node without a pointer. Good for adding and deleting nodes. Bad for retrieval.
+
+Array - Continuous block of cell in the computer memory. Every block of cell has an address and an index. Great for retrieval but bad for adding items when array has to move within memory. 
+
+Hash Table - Called "Dictionary" in Python. Key runs through hasing function which then spits out an address. Memory address don't have to be next to each other like in array so you don't have size issue. Two keys can hash to the same memory location. This is called "collision." Good for add + remove and retrieval. Bad because collision can happen.
+
+Stack/Queue - Stack is last in, first out structure. Great for Depth First Search. Queue is first in, first out. Efficient for add + removal but limited use case.
+
+Graphs + Tree - Nodes have pointers like linked list but they're called edges. Edges can have weights. Trees have parents and children(s). Binary search trees can only have 2 children per parent. The "children" is called left or right. 
+
+How to find Big O Notation: Take the mathematical equation (eg. T = 1 or y = mx + b or ax^2 + bx + c). Find the largest term (For y = mx + b it is mx) then remove the coefficient.
+
+Constant: T = 1 becomes O(1)
+Linear: y=mx+b becomes O(x)
+Quadratic: ax^2 + bx + c becomes O(x^2)

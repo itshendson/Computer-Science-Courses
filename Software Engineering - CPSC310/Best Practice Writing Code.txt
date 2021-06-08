@@ -1,0 +1,17 @@
+- Add comments/documentation to code
+- Follow the same syntax/coding patterns
+- Give methods names that can be understood without going to the implementation
+- Write code that is natural/intuitive to how we read english sentences
+- Avoid long, nested code. Instead, break it down into digestible pieces.
+- Our code should be able to tell a story
+	- if mario grow,
+	- then play the grow sound,
+	- then set mario's state to largeMario
+
+
+- Unavoidably, code bcomes bloated (long methods, large classes, long parameters)
+- OO abuse is when a behaviour don't belong to a class but the Developer adds it anyways
+
+
+- Technical debt: quick fixes made in the code due to time pressure or developers being unfamiliar with the original code.
+- Although quick fixes can be implemented, it adds complexity to the code making it harder to evolve

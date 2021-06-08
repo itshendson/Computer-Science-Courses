@@ -1,0 +1,37 @@
+From: https://sites.google.com/site/ubccpsc2102015w1/schedule
+
+• Data Abstraction
+- Putting the "wires" of a machine inside a black box to hide them 
+- We only need need to know the inputs and outputs of said black box
+- As long as we know the specifications (inputs/outputs/parameters/method signature) of a black box, we can connect it to other systems
+- The other systems will still work despite the fact it doesn't know whats inside the black box
+- This enables "modularity" and all its benefits (ie. easily isolating a problematic system, easily replacing the broken module, if a module break it won't break the entire system)
+- https://www.youtube.com/watch?v=L1-zCdrx8Lk
+
+• Domain, Data Abstraction and Class
+- A domain are the things you want to know when building a software for it.
+- Example: When building a feeding software for the Vancouver Aquarium, the domain is the kinds of animals that are there, feeding schedule, etc.
+- If a data object representation changes, the software dependent on the object need not change
+- A Class is a representation of a domain. The class may contain the method signatures, constructor, states and behaviors of a domain.
+- In a Class (which is a data abstraction), it also contains "semantic" information (also considered informal language) to specify three things: REQUIRES, MODIFIES, EFFECTS
+
+• REQUIRES
+- The constraints of an operation (aka the methods and constructors of a class)
+- "this" represents the data object
+- REQUIRES seems to be specifying the constraints of the parameter
+- But a requires clause isn't simply stating that you need a list or an object. It can require that the parameters is a list of a certain size, etc.
+
+• MODIFIES
+- States which input values are modified by the operations.
+- Describes WHAT is modified not how it is modified.
+- If the input values are changed after the operation, the value is said to be persistent.
+
+• EFFECTS
+- Specifies the behaviour of the operation given that the REQUIRES clause is met. Also specifies what is produced by the operation and how any input values are modified. 
+
+• Mutators
+- Operations that can alter an instance of the data abstraction.
+- If Animal is a Class (aka. the data abstraction), then a method inside the Class, like getAcceptableFoodToEat, is a mutator because they alter an instace of the class
+
+• Procedural Abstractions
+- Procedural abstraction abstracts steps to an action

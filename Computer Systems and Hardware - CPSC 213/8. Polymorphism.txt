@@ -1,0 +1,28 @@
+---Polymorphism:
+Polymorphism explains how subclass objects can still use superclass objects and methods
+
+Example:
+We have class Animal.
+We have class Dog which extends Animal
+We have class Cat which extends Animal
+We have Animal[] Kingdom = new Animal[1000]
+
+Polymorphism lets us do the below even though Dog() and Animal are different classes.
+Animal myDog = new Dog()
+Polymorphism also ensures that the right method is being run if both the super and subclass have the same method name.
+
+Polymorphism also lets us loop through an array of Animals, even if the elements of the array are of object type Dog() or Cat(). We don't have to worry about making sure our array of animals only include animal or dogs or cats:
+for(Animal ani : Kingdom)
+	ani.sleep()
+
+
+
+
+--- Class Jump table
+Objects stores pointer to their Class
+In turn, the Class sttores a "class jump table"
+In turn, the class jump table stores the address of every method in the class.
+
+• Address of jump table is determed dynamically
+• A class' offset to a method in the jump table is static
+

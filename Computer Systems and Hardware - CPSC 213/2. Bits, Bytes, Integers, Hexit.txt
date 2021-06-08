@@ -1,0 +1,12 @@
+
+Bit is a 1 or 0. Every integers (eg. 1, 238, -71, etc) can be represented by 32 bits.
+
+Bytes is 8 bits. Since it takes 32 bits to represent an integer and it takes 8 bits to represent a byte. An integer also represents 4 bytes. 
+
+Array of Integers - if you have an array of length 3, you basically need 3 bytes stored in memory. 
+
+Converting Integers to Binary
+
+Hexadecimal starts with 0x. Hexadecimal is a base 16 system. You can represent 2 bytes with a hexadecimal 
+
+When storing hexadecimal on the "memory tape" you can do it "left to right" or "right to left" as long as it is consistently like that in the computer it's acceptable. However when communicating data over a network, then there might be inconsistencies. 

@@ -1,0 +1,47 @@
+• Trees
+- Trees constructed from nodes that have pointers to one or more nodes
+- Each node is connected by an "edge" to another node
+- There is a path to every node
+- A tree has one less edge than the number of nodes
+
+• Terminology
+- Ancestors
+- Descendants
+- Siblings
+- Leaf (node without a child)
+- Path is a sequence of nodes v1 ... vn where v(n) is parent to v(n+1)
+
+• Binary Tree
+- A tree with at most two child per node
+
+• More Terminology
+- The height of node v is the length of the longest path from v to a leaf
+- The depth of a node v is the length of the path from v to to the root
+
+• Perfect Tree
+- A perfect tree is when no node has only one child and all leaves have the same depth.
+- Every level has double the nodes.
+
+• Complete Tree
+- A perfect tree is complete
+- A binary tree is complete if
+	- The leaves are on at most two different levels
+	- The second to bottom level is completed filled in
+	- The leaves on the bottom trees as far to the left as possible
+- Simpler explanation is a tree that goes from top to bottom, left to right
+
+• Traversal
+- A traversal algo for a binary tree visits each node in the tree
+- Typically, the algo will do something to every node
+- Traversal algos are naturally recursive
+
+• Traversal Methods
+1. Preorder: nlr: N is first (pre).
+2. Inorder: lnr: N is in middle (in order).
+3. Postorder: lrn: N is last (post).
+
+n = visit
+l = left
+r = right
+
+Great visualization of traversal: https://www.youtube.com/watch?v=BHB0B1jFKQc&ab_channel=BackToBackSWE

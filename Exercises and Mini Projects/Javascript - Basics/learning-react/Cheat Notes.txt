@@ -1,0 +1,6 @@
+Use functional component when the state does not change.
+Use class-based component when the state DOES change.
+
+State is when you want to pass data from one component to another.
+Props cannot change data
+State can change data

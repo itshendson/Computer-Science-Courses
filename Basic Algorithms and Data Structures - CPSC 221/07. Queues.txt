@@ -1,0 +1,32 @@
+• Queue Structure
+- Items inserted at the back/end/tail and removed from the front/head
+- FIFO
+
+• Application of Queues
+- Server requests (instant messaging because you want messages to arrive in the right order)
+- Database requet
+- Print quques
+- University course waiting list
+
+• Operations
+- Enqueue: insert item at back of queue
+- Dequeue: remove item from front of queue
+- Peek: return item at front of queue
+- isEmpty: check if queue contains any items
+
+• Performance
+- Queue operations should run in constant time
+- Removing items is SLOW bcuz all remaining items move down/or increment the front index
+
+• Array implementation of Queue
+- Back of queue is current size of array
+- Front of queue is initially index 0
+- Inserting item just goes to end of array
+
+• Circular Array implementation of Queue
+- Use the modoulo operator to calculate front and back position
+
+• Linked List implementation of Queue
+- Inserting/removing items is straightforward at constant time
+- Avoid traversing queue through the linked list.
+- Keep track of node at back of queue using second node pointer

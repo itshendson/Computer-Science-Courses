@@ -1,0 +1,26 @@
+• Control Flow and Data Model
+- Purpose is to help Developers comprehend source code
+
+• Control Flow
+- The order in which code executes
+- When we only consider how code flows within a method it is called "intra-method control flow"
+- When one method calls another method, it is called "inter-method control flow"
+
+
+• Words Irregardless of Language
+- Different programming languages have different words to describe the same concept
+- Here is a list of words you can use regardless of language:
+- Operation : Method
+- Modules : Class
+
+• Coupling
+- When modules are interdependent on each other
+- Greater coupling decreases modularity (bad) and makes the system more complex
+- We want to decrease coupling
+- In general, we only want one path between two classes
+
+• Cohesion
+- Describes whether functionality in a module are related and focused
+- You want every functionality in a class to be RELEVANT to the class
+- If there are alot of unrelated functionality in a class, it has LOW cohesion
+

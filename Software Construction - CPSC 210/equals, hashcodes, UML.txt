@@ -1,0 +1,27 @@
+• Bunch of UML stuff that I won't remember but will learn in the future
+
+• Overriding equals
+- Apparently it is common practice to override the equals() method.
+- The equals method extends the object class
+- the equals method doesn't do what you think it does. It is actually comparing location in memory
+- We want the equals method to compare whether two objects have the same content
+- Therefore we have to override the equals method
+
+- If you override equals you have to ensure 3 things:
+1. the object is equal to itself
+2. the object is not null
+3. the instances are from the same class
+
+- If we do it right, then the equals method should do the following:
+
+String s = new String(“a”);
+String t = new String (“a”);
+s == t; // is false
+s.equals(t); // is true
+
+
+- If you override equals, you must override hashcodes
+
+• Overriding hashcodes
+- Every object has an integer
+- If two objects have the same hashcode they are equal

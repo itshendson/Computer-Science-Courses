@@ -1,0 +1,18 @@
+package learningJava;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //LinkedHashMap has a sorted order.
+        Map ll = new LinkedHashMap();
+
+        ll.put(1, "abra");
+        ll.put(2, "kadabra");
+        ll.put(3, "alakazam");
+
+        System.out.println(ll);
+    }
+}

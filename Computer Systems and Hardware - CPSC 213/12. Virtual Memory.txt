@@ -1,0 +1,36 @@
+---Address Space
+• A chunk/region of non-expandable physical memory to store code, globals, etc.
+• Named by its base virtual address and length
+• The problem with Address space is that there can be many unused address space between regions
+• This wastes physical memory. Also called the "Internal Fragmentation problem"
+
+
+---Segmentation
+• Address space is a set of "segments"
+• Segments are atomic (aka indivisible, either the whole process is in RAM or none of it is)
+• Stack and heap change size dynamically. Segment size is chosen when segment is created.
+• If a segment size is too large, it wastes memory
+• If a segment size is too small and stack or heap is restricted.
+• Even if you want to expand a segment size, it can only expand to fill space between it and next segment. No guarantee of available room. This is called "External Fragmentation"
+- If main memory needs more space, to run another program, it will need to temporarily need to move things in RAM to disc (Is this why Warzone makes it so that my chrome doesn't work while i'm playing the game?)
+
+• External Fragmentation is resolved by moving things to consolidate free space. But moving is expensive (ie. all segment data must be copied).
+
+
+
+---Virtual Memory
+• a mapping from virtual addresses to physical memory addresses
+• an MMU translates from virtual memory to physical memory so that the hardware care understand it
+
+
+---Paged Memory and Virtual Memory
+• Allows program to behave as if a program had the whole logical memory
+• In reality, each program is broken up into a number of pages
+• Each page is only 4kb in size. I single page can only a whole program, part of a program, or multiple program
+• A program's pages be split up in the physical memory or the disc
+• A Page Table is used to keep track of where all the pages are (which address in physical memory or disk)
+• Paging Out: When a program doesn't have enough room to run in the physical memory, part of its pages is loaded to disk.
+
+• Supplementing the Ram with the Disk is called "Virtual Memory"
+• Paged memory: memory is split up into small, equal sized sections called pages
+• When memory is low and excessive swapping happens, it can degrade performance

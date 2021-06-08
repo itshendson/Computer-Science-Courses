@@ -1,0 +1,11 @@
+• Problem
+• Suppose you are given a hand of cards
+• You want to sort the cards from smallest to highest?
+• How do you sort this?
+
+• Selection Sort
+- Have a method that identifies the lowest card from the unsorted array (cards in hand) as well as its index number
+- Put the smallest card in a sorted list by ascending
+- Iterate through rest of list
+- Need to keep track of current pointer and pointer for minimum
+

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+.header {
+    background-color:cornsilk
+}
+
+.logoDiv {
+    background-color:blanchedalmond; /* This background color is to test the div*/
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+.imgLogo {
+    content: url("./images/logo.PNG");
+    max-width: 100%;
+}
+
+.titleDiv {
+    /* background-color: blueviolet; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 30px;
+    letter-spacing: 2.1px;
+}
+
+.application-container {
+    background-color:lightgrey;
+    display: inline-block;
+    height: 800px;
+    width: 65%;
+    padding: 10px;
+
+    position: relative;
+    top: 10px;
+    left: 200px;
+}
+
+label {
+    margin: 2px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    max-width: 1000px;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+.warning-container {
+    background-color: cornsilk;
+    display: inline-block;
+    width: 57%;
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+
+    position: relative;
+    top: -450px;
+    left: 215px;
+}
+
+.verify {
+    display: inline-block;
+    font-size: 17px;
+    margin-bottom: 3.5px;
+    font-weight: normal;
+}
+
+.verified {
+    display: inline-block;
+    font-size: 17px;
+    margin-bottom: 3.5px;
+    font-weight: normal;
+    float: right;
+}

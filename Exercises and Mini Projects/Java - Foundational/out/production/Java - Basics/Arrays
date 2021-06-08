@@ -1,0 +1,28 @@
+package learningJava;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //new String[5] creates a permanent location in memory that is set to length = 5 and cannot be expanded or shrunk
+        String[] strArray = new String[5];
+        strArray[0] = "Bulbasaur";
+        strArray[1] = "Charmander";
+
+        String x = strArray[0];
+        System.out.println(x);
+        System.out.println(strArray[2]); //An index that hasn't been assigned to anything returns null
+
+        //Faster way of creating arrays
+        int[] intArray = {100, 50, 77, 41};
+
+        System.out.println(intArray[3]);
+        //System.out.println(intArray[4]); //This should give me an out of bound exception because intArray only goes up to index 3
+
+        String[] testArray = {"Dratini", "Dragonite"};
+        System.out.println(testArray[0]);
+
+        int[] arr = {14, 634, 346, 51, -10};
+        Arrays.sort(arr, 1,4);  //fromIndex is inclusive while toIndex is exclusive
+
+    }
+}

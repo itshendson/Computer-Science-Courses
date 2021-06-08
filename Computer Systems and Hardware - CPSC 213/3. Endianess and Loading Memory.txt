@@ -1,0 +1,6 @@
+
+Endianess: How do we store hexadecimals in a 8 bit system? Left to right (big endian) or right to left (little endian)? 
+
+The RAM contains addresses. Each address is a byte (or 8 bits). The first 4 bits are the instructions (eg. math, load value, jump, halt, etc). 
+
+The control unit fetches Address 0 of the memory. The memory at Address 0 is a byte. The first 4 bits are instructions, the last 4 bits are values. The control unit then decodes the instructions where the instructions can be add, subtract, load, etc. If the instruction is to load a value at Address x, the control unit takes action to do this, it reads Address x then loads it to register 1. The control unit might do the same thing to fetch instructions, read a value from Address Y, then loads that value to register 2. The control unit might then send an opcode (for example add) to the ALU. The ALU then takes the 3 inputs from register 1, register 2, the opcode and then outputs a value. The value might then be written to a memory at Address Z.

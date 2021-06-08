@@ -1,0 +1,17 @@
+package learningJava;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int x = 6;
+        int y = 7;
+        int z = 10;
+        String str1 = "hi";
+        String str2 = "hi";
+
+        //boolean compare = str1.equals(str2) && y > x;
+        //boolean compareB = str1 == str2 || x > z;
+        //System.out.println(compareB);
+
+    }
+}

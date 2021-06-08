@@ -1,0 +1,14 @@
+• Linked List Structure
+- Each element is a node that contains 2 things: the value and an address that points to the next node
+- The last pointer in the linkedlist points to null. Node(7, null)
+- LinkedList requires more pointer than other data structure
+- Every node knows the previous node and next node
+
+• Performance
+- Unlike Insertion Sort and Selection Sort, LinkedList allows us to insert/delete data much faster
+- Nodes are created in dynamic memory
+- We can insert node at the back of list in O(1) time!
+
+• Operations
+- Insertion: change pointer of one node to the inserted node. The inserted node points to the next node
+- Removal: change pointer of one node to the next node in the series (unlinking a node does not mean that unlinked node has been deleted)

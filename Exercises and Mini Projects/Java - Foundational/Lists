@@ -1,0 +1,23 @@
+package learningJava;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Unlike Arrays, for Sets<> you don't need to predefine the length
+
+        //List is slower than an Array but CAN change size! Lists are also Sets so there is no order and every element has to be unique.
+        ArrayList<Integer> t = new ArrayList<Integer>();
+
+        t.add(100);
+        t.add(777);
+        t.get(0); //This is getting an element at index 0
+        t.set(1, 200);
+        t.size();
+        t.subList(0,3); //Gets element from index 1 to index 2
+
+        System.out.println(t);
+
+    }
+}

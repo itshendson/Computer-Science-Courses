@@ -1,0 +1,13 @@
+The CPU checks for data by first looking in the cache. If nothing, then it moves to the next cache, then the DRAM (Main Memory) then the Hard Disk. Once the data is found, it is called a cache hit.
+
+Level 1 Cache is the fastest, then Level 2 Cache, then Level 3 Cache.
+
+L1 Cache = embeded in CPU. Each L1 cache is dedicated to a core. 
+L2 Cache = can be shared between multiple cores
+L3 Cache = can be shared between multiple cores
+
+Cache can also predict what the next memory will be needed next, so it will cache those memory, ready for when the CPU calls on it. 
+
+CPU process memory (clock speed) at a rate much faster than HDD and Main Memory. Cache is an intermediary because it can operate at a rate fast enough to make the CPU more efficient. 
+
+

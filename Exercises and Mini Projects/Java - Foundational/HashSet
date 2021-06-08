@@ -1,0 +1,30 @@
+package learningJava;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Unlike Arrays, for Sets<> you don't need to predefine the length
+
+        //A Set is a collection of unordered elements that are unique (can't have same element twice)
+        Set<Integer> t = new HashSet<Integer>();
+
+        t.add(7);
+        t.add(5);
+        t.add(99);
+        t.add(5); //if an element is already in the set, it won't get added again
+
+        boolean containsFive = t.contains(5); //sets can find whether an element is inside it REALLY fast
+        t.remove(99);
+        //t.clear();
+        //t.isEmpty();
+        //t.size();
+
+        System.out.println(containsFive);
+        System.out.println(t); //notice that the value isn't in any particular order
+
+        //The other two types of Sets are TreeSet and LinkedHashSet
+    }
+}

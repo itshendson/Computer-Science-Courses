@@ -1,0 +1,80 @@
+---Static Memory Allocation:
+
+Allocation of memory at compile time. The allocation is fixed and cannot be changed. If we store less value than is allocated, we are wasting memory. If we store more value than is allocated, then the program may crash. 
+
+Example: int arr[3] = {1, 2, 3}
+
+
+
+
+
+---Dynamic Memory Allocation:
+
+Allocation of memory at time of execution of the line of code.
+
+Heap is the segment of memory where dynamic memory allocation takes place. 
+
+
+
+---Local Memory Allocation:
+
+Starts with method is called and vanishes when method ends. Allocation and deallocation happens in Java implicitly without the need for using malloc() or free().
+
+
+
+---Heap Memory:
+
+Heap memory is for dynamic allocation of memory. Heap memory size can vary, unlike Stack which is fixed. 
+
+Example:
+Car myCar = new Car()
+"myCar" is called a reference variable. When the above code is ran, an object Car() is created in the Heap Memory. myCar is stored in the Stack Memory with an address that points to the object it just created in the Heap Memory.
+
+Note that if later on we execute:
+myCar = new Car() again, myCar will be pointing to a new different object (and with a new address). The old Car() object is no longer reachable (hence we need Garbage Collector to remove the old object.)
+
+
+
+---Stack Memory:
+
+Store function calls and local variables. Memory set aside for Stack Memory does not grow or shrink during runtime. Imagine an empty vertical rectangle. Stack memory is bottom-up. Main() is at the bottom, which calls another function "above it" which in turn calls another function above it. 
+
+When the very top function gets ran, it is deleted from the stack, then the function beneath that runs. When that function is done, it too is deleted, and the function below that is executed. When function exceeds the stack, it crashes. This is called "stackoverflow." 
+
+Before a thread is ran (or a procedure starts), there is a hidden procedure.
+The hidden procedure allocates memory for stack, initializes the stack pointer, and calls main()
+When a procedure ends, deallocation happens.
+
+
+
+---Garbage Collection:
+In Java, automatically looks for unreachable objects and free them from memory. In C this is an actual procedure/code you have to run.
+
+
+
+
+
+---Deallocation:
+
+Deallocation is important for efficient use of memory. 
+
+In C, free is a method that frees the memory immediately
+.
+A dangling pointer is a pointer that points to an address that has been freed. This is dangerous because a variable could still be pointing to the freed memory. The solution is that after you freed an address, you should re initialize the variable. 
+
+In Java, objects are deallocated implicitly. A garbage collector runs periodically to deallocate unreachable objects. Hence, there is no worry of a dangling pointer. 
+
+In Java, "new" allocates memory for an object in a heap space
+Dog d1 = new Dog("Joey")
+Dog d2 = new Dog("Snoopy")
+
+Next, if we write:
+d2 = new("Draco")
+System.out.println(d2)
+
+This will print out "Draco" and not "Snoopy" because a garbage collector went and freed d2 from having a value of Snoopy.
+
+Garbage Collection: automatically frees memory. 
+
+Memory leak happens when the garbage collector fails to deallocate memory.
+

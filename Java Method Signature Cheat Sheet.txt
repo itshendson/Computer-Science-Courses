@@ -1,0 +1,41 @@
+• Static Variable
+- Code: When a variable is class specific but not instance specific. 
+- Example: Number of legs a dog have. All instances of dog will have 4 legs.
+- Hardware: Fixed address in memory.
+
+• Instance Variable
+- Code: When a variable is instance specific but not class specific.
+- Example: Age of dog because every instance of dog has their own age.
+- Hardware: Dynamic address in memory.
+
+• Static Method
+- A static method doesn't require a class instance to run.
+- Instance variables cannot be used inside a static method.
+
+• Public
+- Any class can access the variable or method
+
+• Private
+- Only that class can access the variable or method
+
+• Protected
+- Only the subclass and project can access the variable or method
+
+• Final
+- The variable can't be changed
+
+• Interface
+- Only contains constants and method signatures
+- The subclass must implement ALL methods in the Interface Class
+- Interfaces can't be instantiated
+
+• Inheritance
+- A subclass inherits whatever methods and variables the superclass has
+- Constructors in superclass cannot be inherited by subclass
+
+• Abstract Class
+- Cannot create new instances of Abstract Class
+- Purpose is to serve as a base for subclasses
+- Can have both abstract methods (only have method signature, no body) and non abstract methods
+- Subclasses must IMPLEMENT the abstract methods
+- Subclasses will inherit the non abstract methods

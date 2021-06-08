@@ -1,0 +1,11 @@
+• Iteration Abstraction
+- A design pattern to address the need to iterate over collections w/o knowing details about the objects
+
+
+• Java Collections Framework
+- Helps manage a collection of objects
+- Different objects need to be managed differently (eg. emails vs contacts in an address book)
+- JCF has a Collections interface that is implemented by other Java Classes
+
+• iterator()
+- A JCF method that knows how to iterate across instance of a collection

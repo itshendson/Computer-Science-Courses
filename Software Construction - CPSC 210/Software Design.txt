@@ -1,0 +1,13 @@
+• Requirements
+- Determining and describing what a system should do
+
+• Software Design
+- How the system can achieve the requirements
+
+• Design Principles
+- There are different approach to design principles
+- In general we want the software to be:
+- Evolvable
+- Low Coupling
+- High Cohesion
+- and others...(flexibility, speed, etc)

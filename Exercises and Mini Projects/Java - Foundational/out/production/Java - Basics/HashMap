@@ -1,0 +1,42 @@
+package learningJava;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Key-value pair
+        //HashMap operations like .put and .get happen at O(1) time (in english: hashmap happens at big-O constant time..so really fast)
+        //HashMap contain unique elements (eg. can't have two keys called 'key')
+        //HashMap is fast because it does not keep track of order of elements
+        Map m = new HashMap();
+
+        m.put("key1", "abra");
+        m.put("key2", "kadabra");
+        m.put("key3", "alakazam");
+
+        m.containsKey("key2");
+        m.containsValue("abra"); //returns boolean
+        m.values(); //returns all values in a list
+        //m.clear();
+        //m.isEmpty();
+        System.out.println(m.get("key1"));
+
+        //Example
+        Map m = new HashMap();
+        String str = "There are 151 Pokemon in the first generation.";
+
+        for (char x:str.toCharArray()) {
+            if (m.containsKey(x)) {
+                int old = (int)m.get(x);
+                m.put(x,old+1);
+            }
+            else {
+                m.put(x, 1);
+            }
+        }
+
+        System.out.println(m);
+    }
+}

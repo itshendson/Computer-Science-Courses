@@ -1,0 +1,15 @@
+• Immutable 
+- Can't be modified after creation. 
+- Everytime an object is modified, it actually creates a new object in memory.
+- Example: String is immutable. String can not actually be modified. Every string has a fixed address in memory. When you manipulate a String (for example tacking an extra character, making it lowercase, etc) your not actually manipulating the string. Rather, you are creating a new string in a new memory address.
+- Modifying an immutable object is costly on the memory.
+- Immutable objects: boolean, int, float, string
+
+
+• Mutable 
+- Can be modified after creation.
+- When an object is modified, it DOES NOT create a new object in memory.
+- Mutable objects: list, stringbuffer, set
+
+• Why is Mutability important?
+Mutability is important for performance and capacity. If something is immutable (like a String) but you want to modify it with your code...sure you can do that...but it will create a new memory address for the new modified String. This is a drain on capacity.

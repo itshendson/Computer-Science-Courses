@@ -1,0 +1,6 @@
+• Insertion Sort
+- Another algorithm
+- Takes elements of an array and inserts it into another "sorted" array
+- The algo is fastest when the unsorted array is already in the correct order
+- The worst case scenario is when the unsorted array is in reverse order, thereby having to change every element O(n^2)
+

@@ -1,0 +1,33 @@
+• Removing Node
+- Series of steps (must follow carefully): https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/16-bst3-rotation-203-1201.pdf
+
+• Altenrative to Removing Node
+- Just change the value of the removed node with the predecessor or successor
+- Then  reattach the predecessor/successor's child to the parent of the predecessor/successor
+
+• How to know if a tree is balanced
+Each node's left and right subtrees differ in height by at most 1
+(Reminder, height means the length of a node to get to a leaflet)
+If a tree is imbalanced, rotate it to maintain the balanced property
+
+• Rotation
+- Not all trees are O(log n), some are O(n) when the tree is imbalanced (think of a tall and thin tree)
+- Rotate to make a tree complete/shorter/O(log n)
+- You rotate anytime after insertion or deletion to ensure the tree remain balanced
+
+• AVL Trees
+- Insertion begins with ordinary BST insertion followed by rotations to maintain balance
+
+• Theorem:
+- The height of an AVL tree with n nodes is O(log n)
+- In other words, the more nodes/keys a tree has, the LESSER its height.
+- With more nodes, you can actually form a tree shape: https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/19-btree-203-1201.pdf
+
+
+
+
+This video really solidified the ideas for rotation: https://www.youtube.com/watch?v=jDM6_TnYIqE&list=WL&index=6&t=255s&ab_channel=AbdulBari
+- His method is better, find imblanace by taking a node, find the number of edges for left, find the number of edges for right
+- Then subtract left edges by right edges. If the result is NOT -1, 0, 1 then THAT node is imbalanced
+- So now you know which node is imbalanced, from there you can do a rotation based on LLR, RRL, etc
+- You only need to rotate 3 nodes at a time, from the imbalanced node using the LLR-RRL method

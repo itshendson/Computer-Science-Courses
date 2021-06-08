@@ -1,0 +1,13 @@
+• General Rules:
+- Single operations: constant time
+- Consecutive operations: sum of operation time
+- Conditionals: condition check + branch time
+- Loops: sum of each loop body
+- Function call: time for function
+
+• Loop invariants
+- If it is true before an iteration of the loop, it remains true before the next iteration
+- Properties of the algo that are always true/do not vary any point in the program
+- A property may change briefly but the rest of the loop instructions should return the property for
+	the next iteration
+

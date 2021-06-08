@@ -1,0 +1,44 @@
+• How do we measure the space and time of an algorithm, given that different computers have different hardware?
+
+• Asymptotic Notation
+- Measures the efficiency of an algorithm with the increase in the input size
+- What happens to speed/time of an algo as 'n' approaches infinity.
+
+• Notations
+Big O = Upper Bound: n = O(n^2)
+Theta = Tight Bound: n < 3n < 5n: 3n is tightly bound between two bounds
+	= Used for analyzing the average case complexity of an algo
+Omega = Lower Bound: n^3=o(log(n))
+
+• Types of Functions
+- Logarithmic: log n
+- Linear: an + b
+- Quadratic: an^2 + bn + c
+- Polynomial: an^z + ... an^2 + an^1 + an^0, where z is some constant
+- Exponential a^n, where a is some constant
+
+• Simplifying Notations
+- You can ignore constants and any lower order terms bcuz they simply are too small to matter as the function approaches infinity. 
+- The act of simplyfying the function will give us an approximate measure of time complexity. The simplyfied functions are called ASYMPTOTIC COMPLEXITY
+- So we can simply the types of functions as follows:
+
+- Logarithmic: log n
+- Linear: n
+- Quadratic: n^2
+- Polynomial: n^z, where z is some constant
+- Exponential a^n, where a is some constant
+
+• Big-O
+- Big-O represents the worst case scenario/the upper bound of a function
+- It provides the "order of growth of the function"
+- If f(n) and g(n) are the two functions then f(n) = O(g(n))
+	If there exists constants c and n0 such that f(n) <= c.g(n), for all n >= n0
+- In other words O(g(n)) is the upper bound of f(n) if the assumptions hold up
+- In other words f(n) will never grow faster than O(g(n))
+- O(g(n)) is the worst case scenario for f(n)
+
+- GREAT simple math explanation: https://www.youtube.com/watch?v=_lO-qsfk_0Q&list=WL&index=20&t=80s
+- Good visual graph explanation: https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/02-analysis-203-1201.pdf
+- Great explanation of notations with code (eg. n^2 are nested for loops, n^3 are 3 layers of nested for loops, a print statement is just a constant)
+
+

@@ -1,0 +1,3 @@
+Arithmetic and Logic Unit (ALU) - has 2 inputs, an operation code, an output (with a destination), and an immediate value (aka the value that is not currently in the register). 
+
+A sequential circuit is basically an ALU + register?

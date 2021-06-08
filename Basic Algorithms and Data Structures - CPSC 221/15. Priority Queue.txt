@@ -1,0 +1,11 @@
+• Priority Queue
+- Highest priority item is removed first (not a FIFO queue)
+
+• Operations
+- create
+- destroy
+- insert
+- removeMin (removeMax)
+- isEmpty
+
+• Performance

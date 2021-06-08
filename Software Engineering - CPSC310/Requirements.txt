@@ -1,0 +1,7 @@
+Requirements is how engineers understand the customer.
+
+• This is iterative process where steps can go back and forth.
+1. Elicitation: The gathering and discovery of requirements from stakeholders
+2. Analysis: Logical breakdown of elicitation to get richer/more precise understanding of requirements
+3. Specification: Representing the collected requirements knowledge in a document
+4. Validation: Go to the customer to get their feedback/review then go back to step 1.

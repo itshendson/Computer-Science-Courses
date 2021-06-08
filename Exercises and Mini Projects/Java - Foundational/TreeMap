@@ -1,0 +1,19 @@
+package learningJava;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //TreeMap has a sorted order.
+        //The data type of the key has to be consistent (either all string or all double etc)
+        Map tt = new TreeMap();
+
+        tt.put(1, "abra");
+        tt.put(2, "kadabra");
+        tt.put(3, "alakazam");
+
+        System.out.println(tt.get(1));
+    }
+}

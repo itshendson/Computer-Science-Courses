@@ -1,0 +1,28 @@
+// Great summary
+https://www.youtube.com/watch?v=BwuLxPH8IDs&t=10261s
+
+// Checks version of typescript
+tsc --version
+
+// Creates tsconfig.json
+tsc --init
+
+// Compiles specific file from .ts to .js
+tsc app.ts
+
+// Watch changes / auto compiles after every save
+tsc app.ts -w
+OR...
+tsc -w
+
+
+// Quit watch mode
+ctrl + c
+
+
+After creating tsconfig.json:
+- Edit the outDir to "./dist"
+- Edit the rootDir to "./src"
+- In index.html make sure to add:
+	<script src="dist/app.js defer></script>
+	<script src="dist/xyz.js defer></script>

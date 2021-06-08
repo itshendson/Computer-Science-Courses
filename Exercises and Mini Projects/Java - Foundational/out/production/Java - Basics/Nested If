@@ -1,0 +1,33 @@
+package learningJava;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("Input your age: ");
+        Scanner sc = new Scanner(System.in);
+        String scanned = sc.nextLine();
+        int age = Integer.parseInt(scanned);
+
+        if (age >= 18 ) {
+            System.out.println("What is your favourite food?");
+            String food = sc.nextLine();
+
+            if (food.equals("Sushi")) {
+                System.out.println("me too!");
+            }
+            else {
+                System.out.print("Your food taste is boring");
+            }
+
+            System.out.println("You are an adult");
+        }
+        else if (age >= 13) {
+            System.out.println("You are a teenager");
+        }
+        else {
+            System.out.println("You cannot ride");
+        }
+
+    }
+}

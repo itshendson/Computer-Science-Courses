@@ -1,0 +1,60 @@
+• Robustness
+- Writing the specs and methods in a way that covers all values that could be passed to the operation
+
+• Exception
+- An event that interrupts the flow
+
+• Class Hierarchy
+- Throwable is the root class of every error and exception
+
+• Checked Exceptions
+- Represents a potential problem that the user knows can happen...
+- so you declare the exception in the method signature and create a handling policy at compile time.
+- Checked Exceptions must declare the exception type in the method signature
+- If the exception is declared but not handled in a method, the exception goes back to the caller of the method
+
+- Example:
+public int nthDayInYear(int year, int monoth, int day) throws IllegalValueException {
+	if (year <= 0) {
+		throw new IllegalValueException("Year is <=0");
+	...
+
+
+
+• Runtime (Unchecked) Exceptions
+- Represents an unexpected problem at runtime (eg. nullpointerexception, illegalargumentexception)
+- An exceptional condition that may occur anywhere in the program (eg. Java ran out of memory). 
+- Unlike checked exceptions, the method need not declare it can throw an unchecked exception.
+
+- Example:
+public BankAccount(String owner, int amount) {
+	if (amount < 0) {
+		throw new RuntimeException("Cannot create account with negative balance")
+	}
+	...
+
+- The above method will not throw an error until the program is RUNNING. 
+
+
+
+• User-defined Exceptions
+- You can define your own exceptions by extending a class to either Exception or RuntimeException
+
+
+
+• Clss Invariant
+- Means what must always be true for an instance of a data abstraction
+- An invariant must hold hold before a method (operation) is executed on an object and after
+- In other words...the class invariant is added to the REQUIRES and EFFECTS clause
+
+- Example of Invariant could be a specification that says getTimesFed() is always greater than 0, before and after the operation executes
+class Animal {
+	
+	private void hasValidState() {
+		assert getTimesFed() >= 0;
+		// do stuff
+		assert getTimesFed() >= 0;
+	}
+}
+
+- This checks the invariant at the start and end of the methods

@@ -1,0 +1,20 @@
+• B-Tree Definitions
+- Values are now called KEYS
+- B Trees also have an "Order M"
+- Order M means that a node can have at most M amount of children
+
+• B-Tree Structures
+- Nodes can have multiple values/keys, not just 1 like BST
+- Nodeshave can have multiple branches
+- A non-leaf node with k children, contains k-1 keys
+- The root has at least two children if it is not a leaf node
+- Every non-leaf node (except root) has at least m/2 children
+- All leaves appear in the same level 
+
+• Insertion
+- Insert until node full, then split (2 keys to a "left" node, the 3rd key promoted to parent node, then other keys on the right node)
+
+
+Reference:
+https://www.youtube.com/watch?v=C_q5ccN84C8&ab_channel=FullstackAcademy
+Explains why B-Trees are good for Disk: https://www.youtube.com/watch?v=aZjYr87r1b8&ab_channel=AbdulBari
