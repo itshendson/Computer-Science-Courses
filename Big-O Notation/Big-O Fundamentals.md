@@ -12,3 +12,9 @@
 ## Linear Time
 - When output increases proportionately to increases in input.
 - ***Denoted*** Big O(n)
+
+## n^2
+- Nested for loops that has two loops
+- Creates a matrix where you can multiply length by height to get the area....which unsurprisingly leads to n^2
+![Big O(n^2)](./squared.PNG)
+- ***Denoted*** Big O(n^2)
