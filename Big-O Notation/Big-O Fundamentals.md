@@ -54,7 +54,7 @@ function square(n) {
 
 
 ## O(log n)
-How many times do we recursively call ourselves?
+When we recursively call ourselves. A BST is O(log n)
 ```
 function logFunc(n) {
 	if (n === 0) return;
@@ -62,4 +62,17 @@ function logFunc(n) {
 	return logFunc(n);
 }
 ```
-If n = 8, this logFunc will run three times! The first time, 8 /2 = 4, then 4/2, then 2/2, then we reach base case and terminate.
+If n = 8, then the output will be 3....because we will recursively call logFunc three times total. Each logFunc will divide n by 2, such that 8/2 = 4, 4/2 = 2, 2/2 = 1.
+Notice that log base 2 of 8 is equaled to 3.
+
+Another way to look at O(log n):
+```
+function logn(n) {
+	while (n > 2) {
+		n = Math.floor(n/2)
+	}
+}
+
+If n = 8, output will be 3. Just like logFunc, we will run three iterations.
+```
+
