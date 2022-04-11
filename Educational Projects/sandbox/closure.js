@@ -1,9 +1,10 @@
 /**
- * Task: Console.log from 0 to 5.
- * Notice that it just prints 6 repeatedly. This happens because the for loop completes its iterations and reaches 6 before the asynchronous setTimeout() function is even added to the callstack and executed. 
+ * Task: Console.log from 0 to 2.
+ * Notice that the below function just prints 3 repeatedly. This happens because "var i" is a global variable. 
+ * The for loop will complete its entire iteration and reach i = 3 long before setTimeout() completes and console.log is called.
  */
 let countToFive = () => {
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 3; i++) {
         setTimeout(() => {
             console.log(i)
         }, i * 1000)
@@ -17,7 +18,7 @@ let countToFive = () => {
  * let creates a block scope for EVERY i iteration. Hence setTimeout() has a different i variable every block
  */
  let countToFiveUsingLet = () => {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
         setTimeout(() => {
             console.log(i)
         }, i * 1000)
@@ -32,7 +33,7 @@ let countToFive = () => {
  */
  let countToFiveUsingClosure = () => {
     
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
         let close = () => {
             setTimeout(() => {
                 console.log(i)
