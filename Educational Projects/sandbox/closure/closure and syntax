@@ -1,3 +1,4 @@
+//----------------------Example 1-------------------------------------
 outer = () => {
     let a = 1;
     inner = () => {
@@ -17,5 +18,24 @@ outer = () => {
 /**
  * Another way of typing outer()() is the following:
  */
-const close = outer();
+// const close = outer();
+// close()
+
+//----------------------Example 2-------------------------------------
+
+/**
+ * Let say we add a parameter to outer, what happens?
+ * inner also has access to b.
+ * b is still considered part of its lexical scope.
+ */
+outer = (b) => {
+    let a = 1;
+    inner = () => {
+        console.log(a, b)
+    }
+
+    return inner;
+}
+
+const close = outer("hello world");
 close()
