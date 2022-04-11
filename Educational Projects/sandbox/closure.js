@@ -27,8 +27,8 @@ let countToFive = () => {
 // countToFiveUsingLet();
 
 /**
- * Fix 2: Implement a closure to remember what the i value is for each loop
- * let creates a block scope for EVERY i iteration. Hence setTimeout() has a different i variable every block
+ * Fix 2: Implement a closure
+ * Closure remembers the value that was initially passed to it. Hence each call of close() has the correct i value.
  */
  let countToFiveUsingClosure = () => {
     
