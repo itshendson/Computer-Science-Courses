@@ -1,0 +1,21 @@
+outer = () => {
+    let a = 1;
+    inner = () => {
+        console.log(a)
+    }
+
+    return inner;
+}
+
+/**
+ * Why are there two parenthesis?
+ * The first parenthesis returns inner without executing it.
+ * The second parenthesis executes inner.
+ */
+// outer()();
+
+/**
+ * Another way of typing outer()() is the following:
+ */
+const close = outer();
+close()
